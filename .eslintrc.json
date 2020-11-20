@@ -1,27 +1,13 @@
 {
   "env": {
-    "browser": true,
     "commonjs": true,
-    "es6": true,
+    "es2021": true,
     "node": true
   },
-  "extends": [
-    "react-app",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier"
-  ],
+  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "prettier"],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
+    "ecmaVersion": 12
   },
-  "rules": {
-    "no-unused-vars": [
-      "warn",
-      { "vars": "all", "args": "all", "ignoreRestSiblings": true }
-    ]
-  }
+  "rules": {}
 }
