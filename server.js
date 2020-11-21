@@ -4,10 +4,6 @@ const path = require("path");
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get("/", (request, response) => {
-  response.send("Hello World!");
-});
-
 app.use(express.static(path.join(__dirname, "client/build")));
 
 app.use(
